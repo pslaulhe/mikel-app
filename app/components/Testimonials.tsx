@@ -16,7 +16,7 @@ const testimonialsData: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="py-12 bg-white">
+        <section id={"testimonials"} className="py-12 bg-white">
             <div className="container mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-8">What Our Clients Say</h2>
                 <div className="space-y-6">

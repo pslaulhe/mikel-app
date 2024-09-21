@@ -7,13 +7,13 @@ const Header: React.FC = () => {
     const [navOpen, setNavOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 w-full z-20">
+        <header className="sticky top-0 left-0 w-full z-20 bg-slate-800 text-white">
             <nav className="container mx-auto flex items-center justify-between p-4">
-                <Link href="/">
-                    <a className="text-2xl font-bold text-white">Mountain Guide</a>
+                <Link href="/" className="text-2xl font-bold">
+                    Mikel Ribas
                 </Link>
                 <button
-                    className="text-white md:hidden"
+                    className="md:hidden"
                     onClick={() => setNavOpen(!navOpen)}
                     aria-label="Toggle navigation menu"
                 >
@@ -31,18 +31,18 @@ const Header: React.FC = () => {
                     }`}
                 >
                     <li className="text-center md:text-left">
-                        <Link href="/">
-                            <a className="block text-white py-2 md:py-0 px-4 hover:underline">About</a>
+                        <Link href={"#hero"} className="block py-2 md:py-0 px-4 hover:underline">
+                            Conóceme
                         </Link>
                     </li>
                     <li className="text-center md:text-left">
-                        <Link href="/">
-                            <a className="block text-white py-2 md:py-0 px-4 hover:underline">Services</a>
+                        <Link href={"#services"} className="block py-2 md:py-0 px-4 hover:underline">
+                            Servicios
                         </Link>
                     </li>
                     <li className="text-center md:text-left">
-                        <Link href="/">
-                            <a className="block text-white py-2 md:py-0 px-4 hover:underline">Contact</a>
+                        <Link href={"#testimonials"} className="block py-2 md:py-0 px-4 hover:underline">
+                            Testimonios
                         </Link>
                     </li>
                 </ul>
