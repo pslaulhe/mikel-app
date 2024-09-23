@@ -2,10 +2,15 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from "@/app/components/Header";
+import React from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({ children }) {
+interface Props {
+    children: React.ReactNode
+}
+
+export default function RootLayout({ children }: Props) {
   return (
       <html lang="en">
           <body className={inter.className}>
